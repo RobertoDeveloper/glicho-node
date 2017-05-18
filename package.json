@@ -1,0 +1,21 @@
+{
+  "name": "glicho-node",
+  "version": "1.0.0",
+  "description": "book store api",
+  "main": "server.js",
+  "scripts": {
+    "start:api": "nodemon server.js"
+  },
+  "author": "Roberto Rolon",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.3",
+    "pg": "^6.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+    "engines": {
+    "node": ">=6.9.5"
+  }
+}
