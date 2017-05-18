@@ -2,6 +2,7 @@ var bookLib = require('../../lib/Book/book');
 
 module.exports.getCategories = getCategories;
 module.exports.getBooksByCategoryId = getBooksByCategoryId;
+module.exports.updateBook = updateBook;
 
 function getCategories(req, res, next) {
     bookLib.getCategories(function(err, result) {
@@ -29,4 +30,15 @@ function getBooksByCategoryId(req, res, next) {
             }
         });
     }
+}
+
+function updateBook(req, res, next) {
+    var bookObject = req.body;
+    bookObject.userid_fk = 12;
+    bookLib.updateBook(bookObject, function(err, result){
+        if(err) {
+            return next(err);
+        }
+        res.json(result);
+    });
 }

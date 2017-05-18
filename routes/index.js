@@ -19,6 +19,8 @@ const bookApiPrefix = '/api/bookstore/';
 
 router.get(`${bookApiPrefix}getCategories`, book.getCategories);
 router.get(`${bookApiPrefix}getBookByCategoryId/:categoryid`, book.getBooksByCategoryId);
+router.post(`${bookApiPrefix}updateBook`, book.updateBook);
+
 
 module.exports = router;
 
