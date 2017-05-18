@@ -33,7 +33,7 @@ application.all('/*', function(req, res, next) {
 application.use('/', require('./routes'));
 
 application.use(function(req, res, next) {
-    var err = new Error('Not Found Hello World');
+    var err = new Error('Not Found!');
     err.status = 404;
     next(err);
 });

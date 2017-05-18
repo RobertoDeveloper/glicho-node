@@ -18,7 +18,7 @@ router.get('/', function(req, res, next) {
 const bookApiPrefix = '/api/bookstore/';
 
 router.get(`${bookApiPrefix}getCategories`, book.getCategories);
-router.get(`${bookApiPrefix}getBooksByCategoryId/:categoryid`, book.getBooksByCategoryId);
+router.get(`${bookApiPrefix}getBookByCategoryId/:categoryid`, book.getBooksByCategoryId);
 
 module.exports = router;
 
