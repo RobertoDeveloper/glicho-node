@@ -34,7 +34,7 @@ function getBooksByCategoryId(categoryid, callback) {
 function updateBook(bookObject, callback) {
     //update book logic can be added here
 
-    var status = "";
+    var status = ""; // create twitter status
     insertBook(bookObject, status, callback);
 }
 

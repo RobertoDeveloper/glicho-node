@@ -34,7 +34,7 @@ function getBooksByCategoryId(req, res, next) {
 
 function updateBook(req, res, next) {
     var bookObject = req.body;
-    bookObject.userid_fk = 12;
+
     bookLib.updateBook(bookObject, function(err, result){
         if(err) {
             return next(err);
